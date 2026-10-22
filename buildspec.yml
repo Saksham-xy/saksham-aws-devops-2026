@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Starting Saksham AWS DevOps build"
+      - echo "Preparing website for deployment"
+      - test -f index.html
+      - echo "Website file found successfully"
+
+artifacts:
+  files:
+    - index.html
